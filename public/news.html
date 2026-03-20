@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;800&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav w3-include-html="nav.html"></nav>
+    <section id="new-section" class="user search-patient" style="margin: 0px; padding: 0px 20px">
+        
+        <div class="new-content shadow-card">
+            <h2 class="blue" id="new-title">Đăng bài viết - tin tức</h3>
+                <div>
+                    <label class="form-label">Tiêu đề:</label>
+                    <input type="text" class="form-control" id="new-title1">
+                </div>
+
+                <div>
+                    <label class="form-label">Hình ảnh:</label>
+                    <input type="text" class="form-control" id="new-image">
+                </div>
+                <div>
+                    <label class="form-label">Nội dung:</label>
+                    <input type="text" class="form-control" id="new-content">
+                </div>
+                <div class="alert alert-primary mt-3 d-none text-center" role="alert" id="new-alert">
+                    Gửi thông tin thành công
+                  </div>
+                <button type="button" class="btn btn-primary" id="btnActionNewNews">
+                    <span class="spinner-border d-none" role="status" aria-hidden="true"></span>
+                    Gửi thông tin</button>
+        </div>
+    </section>
+    <h3 class="blue d-none" id="patients-title">Các bài viết đã đăng</h3>
+    <section class="search-patient" style="min-height: 60vh;">
+        <div class="patients-info">
+            <div id="loading" class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+    </section>
+
+    <footer w3-include-html="footer.html"></footer>
+    <div w3-include-html="modal.html"></div>
+
+    <script src="js/jquery-3.6.3.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__vi.js"></script>
+    <script src='js/func.js'></script>
+    <script src="js/main.js" type="module"></script>
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>

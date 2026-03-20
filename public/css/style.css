@@ -1,0 +1,792 @@
+:root {
+    --white-purple-color: #F3F3FD;
+    --white-color: #FFFFFF;
+    --blue-color: #1678F2;
+    --dark-blue-color: #283574;
+    --black-purple: #361C7A;
+    --orange-color: #FF7517;
+    --dark-orange-color: #e45b00;
+    --dark-color: #000000;
+    --mwidth: 1500px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+ol,
+ul {
+    padding-left: 0px !important;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mybtn {
+    border-radius: 17.0492px;
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.mybtn.green {
+    font-family: 'Raleway', sans-serif;
+    background: rgb(2, 73, 2);
+    color: #FFFFFF;
+}
+
+
+.mybtn-orange {
+    background: var(--orange-color);
+    color: white;
+}
+
+.mybtn-orange:hover {
+    background: var(--dark-orange-color);
+    color: #FFFFFF;
+}
+
+#buton_special {
+    font-family: 'Raleway', sans-serif;
+    padding: 10px;
+    text-align: center;
+    border-radius: 17.0492px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 2.8vw;
+    text-decoration: none;
+    margin-left: 30px;
+    font-family: 'Raleway', sans-serif;
+
+    align-self: self-start;
+}
+
+.mybtn.light {
+    font-family: 'Raleway', sans-serif;
+    background: var(--orange-color);
+}
+
+.orange {
+    color: var(--orange-color);
+}
+
+.blue {
+    color: var(--blue-color);
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(180deg, #5C6DFF 0%, #5061FF 49.48%, #000E89 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #5C6DFF;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    z-index: 1;
+
+}
+
+nav>div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: var(--mwidth);
+    flex-wrap: wrap;
+}
+
+a.logo {
+    text-decoration: none;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+a.logo:hover {
+    color: wheat
+}
+
+.logo {
+    display: flex;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 50px;
+    align-items: center;
+    font-size: 2em;
+    padding-top: 10px;
+}
+
+.logo img {
+    width: 60px;
+    margin-right: 20px;
+}
+
+footer .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .logo_footer_icon {
+    max-width: 40px;
+
+    margin-top: 20px;
+}
+
+footer .logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    width: 100%;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--dark-blue-color);
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+}
+
+#hamburger:checked~ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+nav ul li.menu-item {
+    padding: 10px;
+}
+
+nav ul li.menu-item:hover {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: var(--orange-color);
+    text-decoration: none;
+}
+
+
+nav ul li.menu-item>a:hover {
+    color: #FFFFFF;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger-label {
+    color: white;
+    font-size: 2em;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+
+/* Hero section */
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 0px;
+    row-gap: 3vm;
+
+}
+
+
+.hero-section .left {
+    flex: 1;
+    flex-basis: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 30px;
+
+}
+
+.hero-section .left h1 {
+    font-size: 3vw;
+    color: #FFFFFF;
+}
+
+.hero-section .left h1 span {
+    font-size: 2.4vw;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.hero-section .left p {
+    font-weight: 500;
+    font-size: 2vw;
+    color: var(--orange-color);
+    margin-top: 20px;
+
+}
+
+
+.hero-section .right {
+    flex-basis: 50%;
+    max-width: 600px;
+}
+
+.hero-section .right img {
+    width: 100%;
+    padding: 20px;
+
+}
+
+/* Achievement cards */
+
+.achievement-card {
+    position: absolute;
+}
+
+.achievement-card .content {
+    border-radius: 24px;
+    background: #FFFFFF;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+}
+
+.achievement-card {
+    left: 49%;
+    top: 228px;
+}
+
+.achievement-card h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--dark-blue-color);
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievement-card p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--dark-blue-color);
+    margin-top: 4px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.achievement-card .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+}
+
+/* Section */
+
+section h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    margin: 0;
+    color: var(--blue-color);
+}
+
+/* section h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    color: var(--dark-blue-color);
+    margin: 12px 0;
+} */
+
+/* Testimonials section */
+
+.testimonials-section {
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    max-width: var(--mwidth);
+    padding: 15px;
+}
+
+
+.testimonials-section .up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonials-section .down {
+    display: flex;
+    gap: 30px;
+
+}
+
+.testimonials-section .down .feature {
+    flex: 1 0 0;
+    margin-top: 40px;
+}
+
+
+.shadow-card {
+    background: #ffffff;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.shadow-card:hover {
+    background: #ffffff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.testimonials-section .shadow-card img {
+    margin-top: 20px;
+    height: 80px;
+}
+
+.testimonials-section .shadow-card .content h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: #000000;
+}
+
+.testimonials-section .shadow-card .info p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 30px;
+    color: #8A8585;
+    margin: 20px;
+}
+
+/* News section */
+#new-section{
+    margin-top: 50px !important;
+}
+#patients-title{
+    margin-top: 30px !important;
+}
+.news-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    max-width: var(--mwidth);
+    padding: 15px;
+}
+#patients-title{
+    margin-top: 10px;
+}
+.news-section .blue {
+    text-align: center;
+}
+
+
+.all_items {
+    text-align: right;
+    font-weight: 500;
+    padding-right: 30px;
+}
+
+.news-section .article {
+    display: flex;
+    background: #ffffff;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.news-section .article span.heading {
+    font-size: 1.3em;
+}
+
+.news-section .article a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.news-section .article .inf p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    margin-left: 20px;
+    margin-top: -2px;
+    color: #464646;
+}
+
+.news-section .article img {
+    height: 120px;
+    width: 160px;
+    float: left;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Patient section */
+
+.patient-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: var(--mwidth);
+    width: 100%;
+    padding: 15px;
+}
+
+.patient-section .up h1 {
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+
+.patient-section .patients {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.patient-section .patients .patient {
+    margin: 20px;
+    border-radius: 20px;
+}
+
+
+.patient-section .patients .avatar {
+    width: 100%;
+    /*or 70%, or what you want*/
+    height: 240px;
+    /*or 70%, or what you want*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.patient-section .patients .name {
+    width: 205px;
+}
+
+.patient-section .all_patients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.patient-section .patients h4 {
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #000000;
+}
+
+.patient-section .patients p {
+    text-align: center;
+    color: #777777;
+}
+
+.patient-section a {
+    text-decoration: none;
+}
+
+/* Care section */
+
+.cares {
+    display: flex;
+    gap: 50px;
+}
+
+.care {
+    background: #ffffff;
+    box-shadow: 5px 5px 5px rgba(0.2, 0.2, 0.2, 0.2);
+    border-radius: 42.65px;
+}
+
+.cares h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+}
+
+.cares p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 44px;
+    text-align: center;
+    color: #8A8585;
+}
+
+.cares a {
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    background: var(--dark-color);
+    color: #FFFFFF;
+    margin-top: 50px;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer h3 {
+    color: var(--orange-color);
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+footer ul li {
+    margin: 15px 0px;
+}
+
+footer .links {
+    text-align: center;
+}
+
+
+footer .links-container {
+    display: flex;
+}
+
+footer .links-container * {
+    flex-grow: 1;
+}
+
+footer .social img {
+    margin-left: 20px;
+    height: 20px;
+}
+
+footer form {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+footer form input {
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    color: var(--dark-color);
+    width: 300px;
+}
+
+footer form button {
+    right: 5px;
+    top: 50%;
+    background: var(--dark-blue-color);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+footer .copyright {
+    padding-top: 40px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+
+.mybtn.none {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    min-width: 330px !important;
+}
+
+ul.dropdown-menu li {
+    padding: 10px 0px;
+    text-transform: none;
+}
+
+.search-patient {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+}
+
+.search-patient .deco {
+    display: none;
+   
+
+}
+.search-patient .filter {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-patient .filter>div {
+    padding-top: 10px;
+}
+
+.search-patient .filter input {
+    padding: 5px;
+}
+
+.search-patient .filter button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.new-content button {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.new-content .form-label{
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+#comments{
+    align-self: stretch;
+    
+}
+.search-patient .patients-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.search-patient .patients-info img {
+    max-width: 100%;
+
+}
+
+.search-patient .patients-info #loading {
+    margin-top: 50px;
+    align-self: center;
+}
+
+.search-patient .patients-info .patient-info {
+    display: flex;
+    padding: 20px;
+}
+
+.search-patient .patients-info .avatar {
+    width: 200px;
+    /*or 70%, or what you want*/
+    height: 200px;
+    /*or 70%, or what you want*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+}
+
+.search-patient .patients-info .patient-info .info {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.new-content{
+   padding: 20px;
+}
+
+.search-patient .patients-info .patient-info .info .line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-patient .patients-info .patient-info .info .line {
+    display: flex;
+}
+
+.search-patient .patients-info .patient-info .info .line > div {
+    display: flex;
+}
+
+.search-patient .patients-info .patient-info a {
+    text-decoration: none;
+}
+
+.search-patient .patients-info img.avatar {
+    width: 150px;
+    height: 150px;
+}

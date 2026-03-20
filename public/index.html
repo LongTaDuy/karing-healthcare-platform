@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300;800&display=swap"
+        rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+ -->
+
+
+</head>
+
+<body>
+
+    <nav w3-include-html="nav.html"></nav>
+
+    <header>
+        <!-- End of desktop navigation menu -->
+        <div class="hero-section">
+            <div class="left">
+                <div>
+                    <h1>
+                        DỊCH VỤ KẾT NỐI <br>
+                        <span>
+                            Người nhà bệnh nhân đột quỵ và người chăm sóc có chuyên môn</span>
+                    </h1>
+                    <p>Nhanh chóng - Thân thiện - Tin cậy</p>
+                </div>
+                <a href="./news.html" class="mybtn-orange" id="buton_special">
+                    Những thông tin <br>quan trọng về đột qụy
+                </a>
+            </div>
+
+            <div class="right">
+                <img src="./image/pic1.png" alt="">
+            </div>
+
+            <div class="achievement-cards">
+                <div class="achievement-card ng-ketnoi">
+                    <!-- <div class="content">
+                            <div>
+                                <h3>20 người</h3>
+                            </div>
+                            <p>Kết nối thành công</p>
+                        </div> -->
+
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- End of header section -->
+
+
+    <section class="testimonials-section">
+        <div class="up">
+            <img src="./image/Heart Rate.svg" alt="">
+            <h1>Tính năng</h1>
+        </div>
+
+        <div class="down">
+            <div class="feature shadow-card">
+                <img src="./image/icon1.png" alt="">
+                <div class="content">
+                    <h3>Thông tin</h3>
+                </div>
+
+                <div class="info">
+                    <p>
+                        Hỗ trợ tư vấn chế độ ăn uống, chăm sóc người đột quỵ
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature shadow-card">
+                <img src="./image/icon2.png" alt="">
+
+                <div class="content">
+                    <h3>Tìm kiếm</h3>
+                </div>
+
+                <div class="info">
+                    <p>
+                        Tìm kiếm, kết nối người bệnh và người chăm sóc
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature shadow-card">
+                <img src="./image/icon3.png" alt="">
+
+                <div class="content">
+                    <h3>Theo dõi sức khỏe</h3>
+                </div>
+
+                <div class="info">
+                    <p>
+                        Theo dõi thông tin sức khỏe người bệnh
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End of testimonials section -->
+    <section class="news-section">
+        <div class="up">
+            <h1 class="blue">Tin Tức</h1>
+        </div>
+
+        <div id="articles" class="articles">
+            <div class="all_items">
+                <a href="news.html">
+                    Tất cả...
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of news section -->
+
+    <section class="patient-section">
+        <div class="up">
+            <h1 class="blue">Người Bệnh</h1>
+        </div>
+
+        <div class="patients" id="patients">
+            <div class="patient shadow-card all_patients">
+                <a href="people.html?type=pt" class="name">
+                    <h4>Tất cả...</h4>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- End of patient section -->
+    <section class="patient-section">
+        <div class="up">
+            <h1 class="blue">Người Chăm Sóc</h1>
+        </div>
+        <div class="patients" id="doctors">
+            <div class="patient shadow-card all_patients">
+                <a href="people.html?type=dt" class="name">
+                    <h4>Tất cả...</h4>
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer w3-include-html="footer.html"></footer>
+
+    <div w3-include-html="modal.html"></div>
+    <script src="js/jquery-3.6.3.slim.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth__vi.js"></script>
+    <script src='js/func.js'></script>
+    <script src="js/main.js" type="module"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+
+
+</html>

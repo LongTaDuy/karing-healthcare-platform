@@ -1,0 +1,89 @@
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Liên hệ chúng tôi</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                <img src="image/Email.svg" alt="">
+                chamsoc@nguoibenh.com.vn
+                <p>
+                <img src="image/Phone.svg" alt="">
+                0983471417
+                <p>
+                <img src="image/locate.svg" alt="">
+                208 Giải Phóng, Hai Bà Trưng, Hà Nội
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div><div id="firebaseui-auth-container"></div></div>
+               
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal d-block1" id="modal-login" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+                <h5 class="modal-title">Tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="firebaseui-auth-container" class="guest"></div>
+                <div id="user-signed-in" class="d-none d-flex user">
+                    <div class="flex-grow-1 d-flex justify-content-center">
+                        <img src="image/user.svg" width="110px" height="110px" class="avatar rounded-circle">
+                    </div>
+                    <div class="flex-grow-1  d-flex flex-column align-self-center me-4">
+                        <div id="name" class="align-self-center text-primary fs-5">Name</div>
+                        <div id="email" class="align-self-center ">Email</div>
+                        <div id="phone">Phone</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer d-none user">
+                <button id="sign-out" type="button" class="btn btn-danger" onclick="firebase.auth().signOut();">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal d-block1" id="modal-delete" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+                <h5 class="modal-title">Xóa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Bạn có chắc chắn muốn xóa
+            </div>
+            <div class="modal-footer d-none user">
+                <button  data-bs-dismiss="modal" data-bs-target="#modal-deletel" type="button" class="btn btn-danger" id="delete-item" onclick="deleteItem()">Xóa</button>
+             
+            </div>
+        </div>
+    </div>
+</div>

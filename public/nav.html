@@ -1,0 +1,51 @@
+<div>
+    <a href="./index.html" class="logo"><img src="image/logo.svg"> Karing</a>
+    <label for="hamburger" id="hamburger-label"> &#9776;</label>
+    <input type="checkbox" id="hamburger" />
+
+    <ul>
+        <li class="menu-item" id="nav-pt">
+            <a href="./people.html?type=pt">Tìm Bệnh Nhân</a>
+        </li>
+        <li class="menu-item" id="nav-dt">
+            <a href="./people.html?type=dt">Tìm Người Chăm Sóc</a>
+        </li>
+        <li class="menu-item" id="nav-news">
+            <a href="./news.html">Tin Tức</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Liên Hệ</a>
+        </li>
+
+        <li class="menu-item">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" class="d-none guest orange">Đăng nhập</a>
+            <div id="login-spinner" class="spinner-border text-light" role="status" style="margin-left: 37px;margin-right: 37px"></div>
+            <div class="dropdown">
+                <img id="avatar" src="image/user.svg" data-bs-toggle="dropdown" width="38x" height="38x"
+                    class="user avatar rounded-circle ms-4 me-4 d-none dropdown-toggle">
+                <ul class="dropdown-menu dropdown-menu-center text-small" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="people.html?type=pt&action=new">Đăng thông tin bệnh nhân</a></li>
+                    <li><a class="dropdown-item" href="people.html?type=dt&action=new">Đăng thông tin người chăm sóc</a></li>
+                    <li><a class="dropdown-item" href="news.html?type=dt&action=new">Đăng bài viết - tin tức</a></li>
+                    <li><hr class="dropdown-divider"> </li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Tài khoản</a></li>
+                 
+                </ul>
+            </div>
+        </li>
+        <script>
+            var modal = document.getElementById('id01');
+            var modal2 = document.getElementById('id02');
+
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+                if (event.target == modal2) {
+                    modal2.style.display = "none";
+                }
+            }
+        </script>
+    </ul>
+</div>

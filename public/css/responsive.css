@@ -1,0 +1,143 @@
+@media screen and (min-width: 1200px) {
+   .hero-section .left h1 {
+      font-size: 40px;
+   }
+
+   .hero-section .left h1 span {
+      font-size: 30px;
+
+   }
+
+
+   #hamburger-label {
+      display: none;
+   }
+
+   nav ul li.menu-item {
+      padding: 20px;
+   }
+
+   .hero-section .left p {
+      font-size: 22px;
+   }
+
+   nav {
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      padding-top: 10px;
+   }
+
+   nav ul {
+      flex-basis: 0%;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      margin: 0;
+      flex-direction: row;
+      background: none;
+      margin-right: 30px;
+   }
+
+   #buton_special {
+      font-size: 24px;
+   }
+
+   nav ul li {
+      padding: 20px;
+      font-size: 1.1em;
+   }
+
+   section h1 {
+      font-size: 40px;
+   }
+
+   nav ul li.menu-item:hover {
+      font-weight: bold;
+      background-color: var(--dark-blue-color);
+      border-radius: 20px;
+      text-decoration: none;
+   }
+
+   .menu-item-hover{
+      font-weight: bold;
+      background-color: var(--dark-blue-color);
+      border-radius: 20px;
+      text-decoration: none;
+  }
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+   #comments {
+      width: 60%;
+      align-self: center;
+      border-radius: 120px;
+      max-width: 1500px;
+   }
+   
+   .search-patient {
+      justify-content: center;
+      max-width: 1500px;
+      gap: 50px;
+      align-items: start;
+      flex-direction: row;
+   }
+
+
+
+   .search-patient .deco {
+      display: flex;
+      width: 30%;
+      background-repeat: no-repeat;
+      align-self: stretch;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+   }
+
+   .new-content {
+      width: 70%;
+   }
+
+   .search-patient .filter {
+      width: 30%;
+   }
+
+   .search-patient .patients-info {
+      width: 70%;
+   }
+}
+
+@media screen and (max-width: 500px) {
+
+   .about,
+   .help {
+      display: none;
+   }
+
+   .contact {
+      text-align: center;
+      width: 100%;
+   }
+
+   .testimonials-section .down {
+      flex-direction: column;
+      gap: 0px;
+   }
+
+   .shadow-card {
+      box-shadow: none;
+   }
+
+   .shadow-card:hover {
+      box-shadow: none;
+      background-color: ghostwhite;
+   }
+
+
+}
